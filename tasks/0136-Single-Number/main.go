@@ -1,12 +1,12 @@
 package _136_Single_Number
 
 func singleNumber(nums []int) int {
-	nums_arr := make(map[int]int, len(nums))
+	numsArr := make(map[int]int, len(nums))
 
 	for _, num := range nums {
-		nums_arr[num] += 1
+		numsArr[num] += 1
 	}
-	for num, count := range nums_arr {
+	for num, count := range numsArr {
 		if count == 1 {
 			return num
 		}
